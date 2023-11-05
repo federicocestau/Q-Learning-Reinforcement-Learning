@@ -23,12 +23,12 @@ Q-Learning falls into the category of Value-based methods, so let’s start by u
 •	Value-based methods — we train the agent indirectly by teaching it to identify which states (or state-action pairs) are more valuable so that it can be guided by value maximization. It is described by a value function where the value of a state is the expected discounted return the agent can get if it starts in that state.
 Regardless of which method we use to train our agent, finding the optimal policy function or the optimal value function equates to discovering the optimal policy(𝜋).
 
-Q-function and Q-table
+Q-function and Q-table:
 
 Since Q-Learning is a Value-based method, we must have a value function, which we will call a Q-function. Inside, it will have a Q-table containing every state-action pair.
 Training a Q-function is simply finding the values associated with each state-action pair stored in a Q-table. Knowing these values enables the agent to choose the best action at each state.
 
-Q-Learning algorithm
+Q-Learning algorithm:
 
 Before we look at the actual Q-Learning algorithm, here are a couple more things to note:
 
@@ -37,7 +37,7 @@ Before we look at the actual Q-Learning algorithm, here are a couple more things
 
 Q learning is a Value-based methods — we train the agent indirectly by teaching it to identify which states (or state-action pairs) are more valuable so that it can be guided by value maximization. Once we train the agent the Q-Table values is being updated through each step, until it reaches the maximum number of episodes, an episode as a fix number of steps, or the Q-table reaches it most optimal policy values, rewards that guide the best actions to take by the agent in each state, the algorithm converges. 
 
-Important parameters to tune are epsilon, gamma, learning rate. 
+Important parameters to tune are epsilon, gamma and learning rate:
 
 Epsilon: enables us to set how much time the agent should spend exploring the environment vs exploiting its existing knowledge about the environment.
 
